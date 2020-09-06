@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    >
+
+
+   <!-- <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/settingActivity_profile_photo"
+        android:src="@drawable/friend"
+    android:layout_width="match_parent"
+        android:scaleType="center"
+    android:layout_height="400dp"
+
+    android:layout_margin="10dp"
+
+    />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/settingActivity_profile_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="276dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="75dp"
+         android:scaleType="centerCrop"
+        android:src="@drawable/friend"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+
+    <androidx.cardview.widget.CardView
+       android:id="@+id/settingActivity_cardView"
+        android:elevation="19dp"
+        app:cardCornerRadius="9dp"
+        android:layout_below="@id/settingActivity_profile_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardUseCompatPadding="true">
+      <LinearLayout
+          android:background="@color/skyBlue"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+          <TextView
+              android:id="@+id/settingActivity_userName"
+              android:textColor="@color/lignGrey"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:textSize="36dp"
+              android:text="@string/settingActivity_userName"/>
+          <TextView
+              android:textColor="@color/lignGrey"
+              android:id="@+id/settingActivity_status"
+            android:layout_margin="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:textSize="22dp"
+              android:text="@string/settingActivity_status"/>
+      </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_marginTop="100dp"
+                android:layout_below="@+id/settingActivity_cardView"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <Button
+
+                    android:id="@+id/settingActivity_changeImage"
+                    android:layout_gravity="center"
+                    android:textColor="@color/skyBlue"
+                    android:background="@color/lignGrey"
+                     android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:textSize="22dp"
+                    android:layout_margin="10dp"
+                    android:text="@string/settingActivity_ChangeImage"/>
+                <Button
+                    android:background="@color/skyBlue"
+                    android:id="@+id/settingActivity_changeStatus"
+                    android:layout_gravity="center"
+                    android:textColor="@color/lignGrey"
+                    android:layout_margin="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                     android:textSize="22dp"
+                    android:text="@string/settingActivity_changeStatus"/>
+
+
+            </LinearLayout>
+
+</RelativeLayout>

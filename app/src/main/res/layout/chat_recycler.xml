@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/chat_recycler"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:background="@color/lignGrey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+               android:layout_marginLeft="13dp"
+                android:id="@+id/chat_recycler_userImage"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:src="@drawable/friend"
+                app:civ_border_width="2dp"
+                android:layout_gravity="center"
+                app:civ_border_color="#FF000000"/>
+        <TextView
+            android:id="@+id/chat_recycler_userText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello how are you "
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:textColor="@color/white"
+            android:background="@drawable/chat_background2"
+            android:textAlignment="center"
+            android:textSize="25dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chat_recycler_myText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:layout_margin="8dp"
+            android:textColor="@color/Black"
+            android:background="@drawable/chat_background"
+            android:textAlignment="center"
+            android:textSize="25dp"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

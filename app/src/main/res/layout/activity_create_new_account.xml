@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNewAccount">
+
+
+    <TextView
+        android:textColor="@color/skyBlue"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/create_new_account_headText"
+        android:textSize="30dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+
+        android:background="@drawable/corner_ui"
+        android:layout_gravity="center"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="3dp">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <AutoCompleteTextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/createNewAccount_enter_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_page_userName"
+                android:textSize="20dp"
+                />
+
+            <AutoCompleteTextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/createNewAccount_enter_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_page_email"
+                android:textSize="20dp"
+                />
+
+            <AutoCompleteTextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/createNewAccount_enter_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_page_password"
+                android:textSize="20dp"
+
+                android:layout_marginBottom="20dp"
+                />
+
+                  </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+            <ProgressBar
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+                android:visibility="gone"
+        android:id="@+id/createNewAccoutn_progressBar"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="140dp"
+
+                />
+
+
+
+    <Button
+        android:background="@color/skyBlue"
+        android:id="@+id/create_new_account_create_new_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lignGrey"
+        android:text="@string/creat_new_account_create_new_Account"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="30dp"/>
+
+</FrameLayout>

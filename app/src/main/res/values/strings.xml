@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">LetsTalk</string>
+    <string name="quotes">“A real friend is one who walks in when the rest of the world walks out.”</string>
+    <string name="main_button">Lets Go</string>
+    <string name="login_page_email">Enter  Mail</string>
+    <string name="login_page_password">Enter pssword</string>
+    <string name="Login_page_verification">Enter Email-Password</string>
+    <string name="login_page_create_new_Account">create a new account</string>
+    <string name="login_page_login">Log IN</string>
+    <string name="create_new_account_headText">SignUp</string>
+    <string name="login_page_userName">UserName</string>
+    <string name="creat_new_account_create_new_Account">Sign Up</string>
+    <string name="menu_item_signOut">Sign Out</string>
+    <string name="menu_item_allUser">All User</string>
+    <string name="menu_item_accountSetting">Account Setting</string>
+    <string name="home_page_Request">Requests</string>
+    <string name="home_page_Chats">CHATS</string>
+    <string name="home_page_FRIENDS">FRIENDS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_request_fragment">Hello Request fragment</string>
+    <string name="hello_chat_fragment">Hello Chat fragment</string>
+    <string name="hello_friends_fragment">Hello Friends fragment</string>
+    <string name="settingActivity_userName">UserName</string>
+    <string name="settingActivity_status">Hey there i am usin LetsTalk</string>
+    <string name="settingActivity_ChangeImage">Change Image</string>
+    <string name="settingActivity_changeStatus">Change Status</string>
+    <string name="user_chat">"this is user name "</string>
+
+</resources>
